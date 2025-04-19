@@ -1,0 +1,536 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to RoversTV</title>
+    <link rel="stylesheet" href="projecttest.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="brand">RoversTV</h1>
+      <ul class="ul">
+        <li><a href="#">home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+       <div class="logo">
+        <img src="IMG_20250216_023759_163.jpg" alt="logo">
+       </div>
+    </nav>
+    
+    
+<section class="container"></section>
+<section class="section__container"></section>
+<div class="creative__text--animation-1">iam</div>
+<span style="--i:0;"></span> --> 
+
+    <!-- <img src="IMG_20250216_023759_163.jpg" alt="" />
+    <p class="rovers">@roverstv</p>
+    <p class="me">we entertain the would</p>
+  </body>
+</html>
+
+<!-- rgh -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rovers TV</title>
+    <link rel="stylesheet" href="projecttest.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="IMG_20250216_023759_163.jpg" alt="Logo">
+            </div>
+            <h1 class="brand">Rovers TV</h1>
+            <ul class="nav-links">
+                <!-- <li><a href="home.html">Home</a></li> -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+               <div class="LOGIN">
+                <li><a href="myhomepage.html">LOGIN</a></li>
+                </div>
+                <!-- <div class="SIGNUP">
+                <li><a href="#">SIGN UP</a></li>
+                </div> -->
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="Welcome">WELCOME TO ROVERS TV BLOG</h1>
+
+    
+    </section>
+
+    <!-- <section class="blog-container">
+        <div class="blog-box">
+            <img src="post1.jpg" alt="Post Image">
+            <h3>Blog Post Title 1</h3>
+            <p>Short description of the blog post. Click below to read more.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-box">
+            <img src="post2.jpg" alt="Post Image">
+            <h3>Blog Post Title 2</h3>
+            <p>Short description of the blog post. Click below to read more.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-box">
+            <img src="post3.jpg" alt="Post Image">
+            <h3>Blog Post Title 3</h3>
+            <p>Short description of the blog post. Click below to read more.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-box">
+            <img src="post1.jpg" alt="Post Image">
+            <h3>Blog Post Title 1</h3>
+            <p>Short description of the blog post. Click below to read more.</p>
+            <a href="#">Read More</a>
+
+            <div class="blog-box">
+            <img src="post1.jpg" alt="Post Image">
+            <h3>Blog Post Title 1</h3>
+            <p>Short description of the blog post. Click below to read more.</p>
+            <a href="#">Read More</a> -->
+
+
+
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #222;
+  }
+
+  .news-grid, .memes-grid, .music-grid, .funny-videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .news-item, .memes-item, .music-item, .funny-videos-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .news-item:hover, .memes-item:hover, .music-item:hover, .funny-videos-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .news-item img, .memes-item img, .music-item img, .funny-videos-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+  }
+
+  .news-item h3, .memes-item h3, .music-item h3, .funny-videos-item h3 {
+    margin: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+
+  .news-item p, .memes-item p, .music-item p, .funny-videos-item p {
+    margin: 0 10px 10px;
+    color: #666;
+  }
+
+  .news-item a, .memes-item a, .music-item a, .funny-videos-item a {
+    display: block;
+    margin: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .read-more {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  #newsModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  #newsModal div {
+    background: #fff;
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    transform: scale(0.9);
+    animation: zoomIn 0.3s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: none;
+  }
+  .LOGIN {
+  color: rgb(253, 253, 255);
+  background-color: rgb(82, 19, 242);
+  border-radius: 20px;
+  font-size: bold;
+  padding: 10px 20px;
+  }
+   .SIGNUP {
+ color: rgb(0, 0, 0);
+  background-color: rgb(203, 199, 211);
+  border-radius: 20px;
+  font-size: bold;
+  padding: 10px 20px;
+   }
+   .search{
+    color: rgb(253, 253, 255);
+    /* background-color: rgb(82, 19, 242); */
+    border-radius: 20px;
+    font-size: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    
+    .button {
+        color: rgb(253, 253, 255);
+        background-color: rgb(82, 19, 242);
+        border-radius: 20px;
+        font-size: bold;
+        padding: 10px 20px;
+        margin-top: 20px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        border: none;}
+   }
+footer-content {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+footer {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 50px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; /* Adjust font size as needed */
+  font-family: 'Segoe UI', sans-serif; /* Adjust font family as needed */
+}
+
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+    .visit {
+                background-color: #111;
+                color: #fff;    
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;  
+                transition: background-color 0.3s ease; 
+            }
+    .nav-links {
+                
+            }
+
+         
+        
+</style>
+
+
+<section id="news">
+  <h2>Latest News</h2>
+  <div class="news-grid">
+    <div class="news-item" onclick="openNewsModal(this)">
+      <img src="Screenshot_8-4-2025_162059_x.com.jpeg" alt="News 1">
+      <h3>Nigeria  First Lady</h3>
+      <p>Nigeria  First Lady, Senator Oluremi Tinubu has donated One billion naira to the National Cancer Fund to aid in the fight against the menace of Cervical Cancer scourge in Nigeria.</p>
+      <span class="read-more" onclick="showFullContent(this)">Read More</span>
+      <div class="full-content" style="display:none;">
+        <p><strong><a href="https://x.com/instablog9ja/status/1909324009579463092">GO to page</a></strong></p>
+      </div>
+      
+    </div>
+    <div class="news-item" onclick="openNewsModal(this)">
+      <img src="boni face.jpeg" alt="News 2">
+      <h3>Victor Boniface</h3>
+      <p>🎙️🗣️Victor Boniface: "when I moved to Germany, I went to Turkish supermarket to buy Afro foodstuffs. Immediately I entered I noticed I was being followed and monitored. I looked around I was the only blâck person in the supermarket and was the one that's being followed. So, I told.</p>
+      <span class="read-more" onclick="showFullContent(this)">Read More</span>
+      <div class="full-content" style="display:none;">
+        <p><strong><a href="https://x.com/thatverydarkma1/status/1909529371112616311">Go to page</a></strong></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="memes">
+  <h2>Latest Memes</h2>
+  <div class="memes-grid">
+    <div class="memes-item" onclick="openNewsModal(this)">
+      <img src="Screenshot 2025-04-12 013037.png" alt="Meme ">
+      <h3>content creators</h3>
+      <p> Man reacts about the maximum content creators he always see while visiting Onitsha mall😭🧎🧎></p>
+ 👇🏽</p>
+      <span class="read-more" onclick="showFullContent(this)">Read More</span>
+      <div class="full-content" style="display:none;">
+        <p><strong><a href="https://x.com/Iamkrebkira/status/1910633183437021532">Go to page</a></strong></p>
+      </div>
+    </div>
+    <div class="memes-item" onclick="openNewsModal(this)">
+      <img src="Screenshot 2025-04-12 012142.png" alt="Meme ">
+      <h3>lol</h3>
+      <p>Buhari Scattered Nigeria And Tinubu Came And Destroyed Country. When We See Tinubu We Will Beat Him Up. Hunger, Death, Poverty, No Jobs And Insecurity Everywhere Since Tinubu Became President”.-Nigerians Reacts To Tinubu Terrible 2 Years In Office.</p>
+      <span class="read-more" onclick="showFullContent(this)">Read More</span>
+      <div class="full-content" style="display:none;">
+        <p><a href="https://x.com/General_Somto/status/1910719277788692762">Go to page</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="music">
+  <h2>Latest Music</h2>
+  <div class="music-grid">
+    <div class="music-item" onclick="openNewsModal(this)">
+      <img src="sporrrttt.jpeg" alt="Music 1">
+      <h3>Sportify</h3>
+      <p> Nigeria artistes earned 25 billion Naira in 2024 from just streaming 
+~ 𝐒𝐩𝐨𝐭𝐢𝐟𝐲.</p>
+      <span class="read-more" onclick="showFullContent(this)">Read More</span>
+      <div class="full-content" style="display:none;">
+        <p><a href="https://x.com/NigeriaStories/status/1788895827664032179">Visit page</a></p>
+      </div>
+    </div>
+    <div class="music-item" onclick="openNewsModal(this)">
+      <img src="Screenshot 2025-04-10 235140.png" alt="Music 2">
+      <h3>BREAKING: NBC bans Eedris Abdulkareem’s</h3>
+      <p>NBC bans Eedris Abdulkareem’s protest song ‘Tell Your Papa’ from radio and TV in Nigeria 🇳🇬.</p>
+      <span class="read-more" onclick="showFullContent(this)">Read More</span>
+      <div class="full-content" style="display:none;">
+        <p class="visit"><a href="https://x.com/NigeriaStories/status/1788895827664032179"> visit page</a></p>
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+<section id="funny-videos">
+  <h2>Latest Funny Videos</h2>
+  <div class="funny-videos-grid">
+    <div class="funny-videos-item" onclick="openNewsModal(this)">
+      <img src="Screenshot 2025-04-11 110136.png" alt="Funny Video 1">
+      <h3>Army done enter wahala</h3>
+      <p>These guys get mind oo! Na soldier dem carry for car like this and dem no even fear 👀😭</p>
+      <span class="read-more" onclick="showFullContent(this)">Read More</span>
+      <div class="full-content" style="display:none;">
+        <p class="visit"><a href="https://x.com/Teeniiola/status/1910583561280692728"> visit page</a></p>
+      </div>
+    </div>
+    <div class="funny-videos-item" onclick="openNewsModal(this)">
+      <img src="Screenshot 2025-04-12 013801.png" alt="Funny Video 2">
+      <h3>sxxual harassment and intimidation</h3>
+      <p>This thing na sxxual harassment and intimidation. If na guy do this kain video, it’ll be another story. What do I know sha🚶🏽‍♂️.</p>
+      <span class="read-more" onclick="showFullContent(this)">Read More</span>
+      <div class="full-content" style="display:none;">
+        <p class="visit"><a href="https://x.com/Emmanuel_Tips/status/1910193832622244069"> visit page</a></p>
+      </div>
+    </div>
+    <!-- Add more funny video items as needed -->
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="newsModal">
+  <div>
+    <button class="close-btn" onclick="closeNewsModal()">×</button>
+    <img id="modalImage" src="" style="width:100%; border-radius:5px; margin-bottom:15px;">
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script>
+  function openNewsModal(element) {
+    const img = element.querySelector('img');
+    const title = element.querySelector('h3');
+    const desc = element.querySelector('p');
+
+    document.getElementById('modalImage').src = img.src;
+    document.getElementById('modalTitle').textContent = title.textContent;
+    document.getElementById('modalText').textContent = desc.textContent;
+
+    document.getElementById('newsModal').style.display = 'flex';
+  }
+
+  function closeNewsModal() {
+    document.getElementById('newsModal').style.display = 'none';
+  }
+
+  function showFullContent(element) {
+    const fullContent = element.nextElementSibling;
+    fullContent.style.display = fullContent.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // Close the modal if the user clicks outside the modal content
+  window.onclick = function(event) {
+    if (event.target == document.getElementById('newsModal')) {
+      closeNewsModal();
+    }
+  }
+</script>
+
+            <!-- -------------------------------------------------------- -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>24/7   Active</h3>
+                    <p>we make sure you smile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast Performance</h3>
+                    <p>We Reply instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3> Your privercy is Secured</h3>
+                    <p>Built with security in mind, your  user data are protected against threats.</p>
+                </div>
+                <div class="feature-card">
+                    
+                    <div class="feature-icon">🔍</div>
+                    <h3>Search us on all social media platform</h3>
+                    <p>We are there make you smile.</p>
+                    <div class="search"><button class="button"><a href="contact.html">search</button></a>
+                     </div>
+                </div>
+                
+                </div>
+                
+                    <!-- --------------
+                    <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>24/7   Active</h3>
+                    <p>we make sure you smile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast Performance</h3>
+                    <p>We Reply instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3> Your privercy is Secured</h3>
+                    <p>Built with security in mind, your  user data are protected against threats.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    
+                    <h3>Search us on all social media platform</h3>
+                    <p>We are there make you smile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Custom Design</h3>
+                    <p>We are difrent among others</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>24/7 Support</h3>
+                    <p>Our team is always available to help you with any questions or issues you might have.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Rovers TV. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="projecttext.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+<!-- ---------------------------------------- -->
+ 
